@@ -26,7 +26,7 @@ function renderelementos() {
     lista.innerHTML='';
     arrglo.forEach(function(item,i){
         lista.innerHTML +=  `
-        <li>
+        <li class="list-group-item list-group-item-light d-flex justify-content-start align-items-center">
             ${item}
             <button onclick="borrarElemento(${i})" class="btn btn-danger">Borrar</button>
             <button onclick="Editar(${i})"class="btn btn-outline-warning">Editar</button>
