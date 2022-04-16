@@ -28,8 +28,8 @@ function renderelementos() {
         lista.innerHTML +=  `
         <li>
             ${item}
-            <button onclick="borrarElemento(${i})">Borrar</button>
-            <button onclick="Editar(${i})">Editar</button>
+            <button onclick="borrarElemento(${i})" class="btn btn-danger">Borrar</button>
+            <button onclick="Editar(${i})"class="btn btn-outline-warning">Editar</button>
         </li>
          `
     })//fin foreach
@@ -51,7 +51,7 @@ function Editar(i){
     btnAgregar.style.display="none";
     const newbtn=document.getElementById("edit");
     newbtn.innerHTML += `
-    <button  id="Actualizar" onclick="actualizar(${val})">Guardar</button>
+    <button  id="Actualizar" onclick="actualizar(${val})" class="btn btn-outline-success">Guardar</button>
    `
  
   
